@@ -4,6 +4,7 @@ import { Link, Route } from 'react-router-dom'
 import Home from './Home.jsx'
 import Fragments from './fragments/Fragments.jsx'
 import Boundaries from './boundaries/Boundaries.jsx'
+import Portals from './portals/Portals.jsx'
 
 const App = () => (
   <Fragment>
@@ -17,6 +18,7 @@ const App = () => (
       <Route exact path='/' component={Home} />
       <Route exact path='/fragments' component={Fragments} />
       <Route exact path='/boundaries' component={Boundaries} />
+      <Route exact path='/portals' component={Portals} />
     </div>
   </Fragment>
 )

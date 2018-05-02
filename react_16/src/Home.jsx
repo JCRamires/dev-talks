@@ -6,6 +6,7 @@ const Home = () => (
         <ul>
             <li><Link to='/fragments'>Fragments</Link></li>
             <li><Link to='/boundaries'>Boundaries</Link></li>
+            <li><Link to='/portals'>Portals</Link></li>
         </ul>
     </div>
 )
