@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { Link, Route } from 'react-router-dom'
 
 import Home from './Home.jsx'
@@ -7,7 +7,7 @@ import Boundaries from './boundaries/Boundaries.jsx'
 import Portals from './portals/Portals.jsx'
 
 const App = () => (
-  <Fragment>
+  <div style={{ padding: '30px'}}>
     <div>
       <nav>
         <Link to='/'>Home</Link>
@@ -20,7 +20,7 @@ const App = () => (
       <Route exact path='/boundaries' component={Boundaries} />
       <Route exact path='/portals' component={Portals} />
     </div>
-  </Fragment>
+  </div>
 )
 
 export default App
