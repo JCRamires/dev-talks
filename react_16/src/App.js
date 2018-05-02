@@ -5,6 +5,7 @@ import Home from './Home.jsx'
 import Fragments from './fragments/Fragments.jsx'
 import Boundaries from './boundaries/Boundaries.jsx'
 import Portals from './portals/Portals.jsx'
+import FunctionalSetState from './FunctionalSetState.jsx'
 
 const App = () => (
   <div style={{ padding: '30px'}}>
@@ -19,6 +20,7 @@ const App = () => (
       <Route exact path='/fragments' component={Fragments} />
       <Route exact path='/boundaries' component={Boundaries} />
       <Route exact path='/portals' component={Portals} />
+      <Route exact path='/functionalsetstate' component={FunctionalSetState} />
     </div>
   </div>
 )
