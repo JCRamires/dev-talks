@@ -51,55 +51,7 @@ No `<head>` ficam conteúdos da página que não são exibidos ao usuário final
 
 `<body>` é o container do conteúdo que será exibido
 
-## Botando em prática
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Quick hummus recipe</title>
-  </head>
-  <body>
-    Quick hummus recipe
-
-    This recipe makes quick, tasty hummus, with no messing. It has been adapted from a number of different recipes that I have read over the years.
-
-    Hummus is a delicious thick paste used heavily in Greek and Middle Eastern dishes. It is very tasty with salad, grilled meats and pitta breads.
-
-    Ingredients
-
-    1 can (400g) of chick peas (garbanzo beans)
-    175g of tahini
-    6 sundried tomatoes
-    Half a red pepper
-    A pinch of cayenne pepper
-    1 clove of garlic
-    A dash of olive oil
-
-    Instructions
-
-    Remove the skin from the garlic, and chop coarsely
-    Remove all the seeds and stalk from the pepper, and chop coarsely
-    Add all the ingredients into a food processor
-    Process all the ingredients into a paste.
-    If you want a coarse "chunky" hummus, process it for a short time
-    If you want a smooth hummus, process it for a longer time
-
-    For a different flavour, you could try blending in a small measure of lemon and coriander, chili pepper, lime and chipotle, harissa and mint, or spinach and feta cheese. Experiment and see what works for you.
-
-    Storage
-
-    Refrigerate the finished hummus in a sealed container. You should be able to use it for about a week after you've made it. If it starts to become fizzy, you should definitely discard it.
-
-    Hummus is suitable for freezing; you should thaw it and use it within a couple of months.
-
-
-  </body>
-</html>
-```
-
-### Semântica e estrutura
+## Semântica e estrutura
 
 Contamos com experiência anterior para dizer qual é função de um objeto no nosso dia a dia, um semáforo com a luz vermelha acesa significa "parar", aplicar a semântica errada pode causar problemas.
 
@@ -115,13 +67,50 @@ Qual a diferença entre os seguintes elementos?
 <h1>Título da página</h1>
 ```
 
-#### Algumas tags
+## Botando em prática
+
+Vamos tentar criar um documento HTML com texto a seguir:
+
+```text
+Quick hummus recipe
+
+This recipe makes quick, tasty hummus, with no messing. It has been adapted from a number of different recipes that I have read over the years.
+
+Hummus is a delicious thick paste used heavily in Greek and Middle Eastern dishes. It is very tasty with salad, grilled meats and pitta breads.
+
+Ingredients
+
+1 can (400g) of chick peas (garbanzo beans)
+175g of tahini
+6 sundried tomatoes
+Half a red pepper
+A pinch of cayenne pepper
+1 clove of garlic
+A dash of olive oil
+
+Instructions
+
+Remove the skin from the garlic, and chop coarsely
+Remove all the seeds and stalk from the pepper, and chop coarsely
+Add all the ingredients into a food processor
+Process all the ingredients into a paste.
+If you want a coarse "chunky" hummus, process it for a short time
+If you want a smooth hummus, process it for a longer time
+
+For a different flavour, you could try blending in a small measure of lemon and coriander, chili pepper, lime and chipotle, harissa and mint, or spinach and feta cheese. Experiment and see what works for you.
+
+Storage
+
+Refrigerate the finished hummus in a sealed container. You should be able to use it for about a week after you've made it. If it starts to become fizzy, you should definitely discard it.
+
+Hummus is suitable for freezing; you should thaw it and use it within a couple of months.
+```
+
+As seguintes tags podem ser úteis
 
 - `<p>`: Parágrafos
 - `<h1>` a `<h6>`: Headings, títulos na página
-- `<a>`: Links para outros documentos
-- `<img>`: Imagens
-- `<button>` Botões
 - `<ul>` e `<ol>`: Listas não ordenadas/ordenadas
 - `<li>`: Item de uma lista
-
+- `<a>`: Links para outros documentos
+- `<img>`: Imagens
