@@ -114,3 +114,31 @@ As seguintes tags podem ser úteis
 - `<li>`: Item de uma lista
 - `<a>`: Links para outros documentos
 - `<img>`: Imagens
+
+[Como estruturar páginas](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure)
+
+## CSS
+
+CSS, Cascading Style Sheets, nasceu em 1996 e é como adicionamos estilo para o documento, deixando assim o HTML encarregado apenas da estrutura do documento.
+
+Adicionamos estilos nos elementos através de seletores, conforme o exemplo a seguir:
+
+```css
+h1 {
+    color: red
+}
+```
+
+Temos 3 maneiras de adicionar CSS ao documento:
+
+- Importando um arquivo css externo no `<head>` (`<link rel="stylesheet" type="text/css" href="estilo.css">`)
+- Adicionando as regras no prório `<head>`
+- CSS inline
+
+### Prática 2
+
+Deixar a página da receita de hummus mais bonita.
+
+## Javascript
+
+Fica pra próxima :]
