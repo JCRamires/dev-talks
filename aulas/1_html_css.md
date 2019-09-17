@@ -1,6 +1,4 @@
-# Frontend básico
-
-## HTML
+# HTML e CSS
 
 HTML significa Hypertext Markup Language, é uma linguagem criada por Tim Berners-Lee em 1989, mencionado pela primeira vez na internet em 1991 no documento [HTML Tags](http://info.cern.ch/hypertext/WWW/MarkUp/Tags.html), é utilizada para criar documentos de hiper texto que serão renderizados por um web browser.
 
