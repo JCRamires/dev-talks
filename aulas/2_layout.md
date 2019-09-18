@@ -66,9 +66,9 @@ body {
 - `Footer` - Rodapé de um documento ou elemento
 - [Outros](https://www.w3schools.com/html/html5_semantic_elements.asp)
 
-## CSS Grid
+## CSS Grid Layout
 
-??????????
+[Melhor ver aqui](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
 ## Flexbox
 

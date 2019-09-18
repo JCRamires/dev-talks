@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "header header header header header"
+        "sidebar conteudo conteudo conteudo conteudo"
+        "footer footer footer footer footer"
+}
+
+.header {
+    grid-area: header;
+    background-color: red;
+    height: 100px;
+}
+
+.menu-lateral {
+    grid-area: sidebar;
+    background-color: green;
+}
+
+.conteudo-principal {
+    grid-area: conteudo;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: blue;
+    height: 100px;
+}
