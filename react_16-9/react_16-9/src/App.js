@@ -4,12 +4,14 @@ import './App.css'
 
 const Profiler = lazy(() => import(/* webpackChunkName: "profiler" */ './Profiler'))
 const Lazy = lazy(() => import(/* webpackChunkName: "lazy" */ './Lazy'))
+const Context = lazy(() => import(/* webpackChunkName: "context" */ './Context'))
 
 export const PAGINAS = {
   INDEX: 'index',
   PROFILER: 'profiler',
   MEMO: 'memo',
-  LAZY: 'lazy'
+  LAZY: 'lazy',
+  CONTEXT_TYPE: 'context_type'
 }
 
 const renderizarPagina = (paginaSelecionada, selecionarPagina) => {
@@ -29,6 +31,13 @@ const renderizarPagina = (paginaSelecionada, selecionarPagina) => {
         </Suspense>
       )
     }
+    case PAGINAS.CONTEXT_TYPE: {
+      return (
+        <Suspense fallback={<div>Carregando...</div>}>
+          <Context />
+        </Suspense>
+      )
+    }
     default: {
       return (
         <>
@@ -41,6 +50,7 @@ const renderizarPagina = (paginaSelecionada, selecionarPagina) => {
           <ul>
             <li><a href="#" onClick={() => selecionarPagina(PAGINAS.MEMO)}>Memo</a></li>
             <li><a href="#" onClick={() => selecionarPagina(PAGINAS.LAZY)}>Lazy e Suspense</a></li>
+            <li><a href="#" onClick={() => selecionarPagina(PAGINAS.CONTEXT_TYPE)}>contextType</a></li>
           </ul>
         </>
       )
