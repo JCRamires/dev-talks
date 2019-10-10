@@ -1,5 +1,7 @@
 import React, { PureComponent, lazy, Suspense } from 'react'
 
+import pogu from './pogu.jpg'
+
 import './App.css'
 
 const Profiler = lazy(() => import(/* webpackChunkName: "profiler" */ './Profiler'))
@@ -12,7 +14,8 @@ export const PAGINAS = {
   MEMO: 'memo',
   LAZY: 'lazy',
   CONTEXT_TYPE: 'context_type',
-  NADA: 'nada'
+  NADA: 'nada',
+  HOOKS: 'hooks'
 }
 
 const renderizarPagina = (paginaSelecionada, selecionarPagina) => {
@@ -46,6 +49,20 @@ const renderizarPagina = (paginaSelecionada, selecionarPagina) => {
         </div>
       )
     }
+    case PAGINAS.HOOKS: {
+      return (
+        <>
+          <div style={{ fontSize: '72px', fontWeight: 800 }}>
+            Hooks
+          </div>
+          <img src={pogu} />
+          <div style={{ color: 'grey', fontSize: '22px' }}>
+            E documentação traduzida para outras linguagens... <br />
+            <a href='https://pt-br.reactjs.org/' target='__blank'>pt-br</a>
+          </div>
+        </>
+      )
+    }
     default: {
       return (
         <>
@@ -63,6 +80,10 @@ const renderizarPagina = (paginaSelecionada, selecionarPagina) => {
           <h2>React 16.7</h2>
           <ul>
             <li><a href="#" onClick={() => selecionarPagina(PAGINAS.NADA)}>16.7</a></li>
+          </ul>
+          <h2>React 16.8</h2>
+          <ul>
+            <li><a href="#" onClick={() => selecionarPagina(PAGINAS.HOOKS)}>16.8</a></li>
           </ul>
         </>
       )
