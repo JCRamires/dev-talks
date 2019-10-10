@@ -1,4 +1,6 @@
 .App {
-    padding:  30px;
     font-size: 32px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
