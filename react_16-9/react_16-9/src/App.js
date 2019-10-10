@@ -1,13 +1,15 @@
-import React, { PureComponent } from 'react'
-
-import Profiler from './Profiler'
+import React, { PureComponent, lazy, Suspense } from 'react'
 
 import './App.css'
+
+const Profiler = lazy(() => import(/* webpackChunkName: "profiler" */ './Profiler'))
+const Lazy = lazy(() => import(/* webpackChunkName: "lazy" */ './Lazy'))
 
 export const PAGINAS = {
   INDEX: 'index',
   PROFILER: 'profiler',
-  MEMO: 'memo'
+  MEMO: 'memo',
+  LAZY: 'lazy'
 }
 
 const renderizarPagina = (paginaSelecionada, selecionarPagina) => {
@@ -15,7 +17,16 @@ const renderizarPagina = (paginaSelecionada, selecionarPagina) => {
     case PAGINAS.MEMO:
     case PAGINAS.PROFILER: {
       return (
-        <Profiler />
+        <Suspense fallback={<div>Carregando...</div>}>
+          <Profiler />
+        </Suspense>
+      )
+    }
+    case PAGINAS.LAZY: {
+      return (
+        <Suspense fallback={<div>Carregando...</div>}>
+          <Lazy />
+        </Suspense>
       )
     }
     default: {
@@ -29,6 +40,7 @@ const renderizarPagina = (paginaSelecionada, selecionarPagina) => {
           <h2>React 16.6</h2>
           <ul>
             <li><a href="#" onClick={() => selecionarPagina(PAGINAS.MEMO)}>Memo</a></li>
+            <li><a href="#" onClick={() => selecionarPagina(PAGINAS.LAZY)}>Lazy e Suspense</a></li>
           </ul>
         </>
       )
