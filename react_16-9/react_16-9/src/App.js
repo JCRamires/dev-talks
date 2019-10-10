@@ -15,7 +15,8 @@ export const PAGINAS = {
   LAZY: 'lazy',
   CONTEXT_TYPE: 'context_type',
   NADA: 'nada',
-  HOOKS: 'hooks'
+  HOOKS: 'hooks',
+  DEPRECATIONS: 'deprecations'
 }
 
 const renderizarPagina = (paginaSelecionada, selecionarPagina) => {
@@ -63,6 +64,19 @@ const renderizarPagina = (paginaSelecionada, selecionarPagina) => {
         </>
       )
     }
+    case PAGINAS.DEPRECATIONS: {
+      return (
+        <>
+          <div style={{ fontSize: '72px', fontWeight: 800 }}>
+              Deprecations
+            </div>
+            <div style={{ color: 'grey', fontSize: '22px' }}>
+              E outras coisas que eu não li ainda. <br />
+              <a href='https://reactjs.org/blog/2019/08/08/react-v16.9.0.html' target='__blank'>Blog</a>
+            </div>
+        </>
+      )
+    }
     default: {
       return (
         <>
@@ -84,6 +98,10 @@ const renderizarPagina = (paginaSelecionada, selecionarPagina) => {
           <h2>React 16.8</h2>
           <ul>
             <li><a href="#" onClick={() => selecionarPagina(PAGINAS.HOOKS)}>16.8</a></li>
+          </ul>
+          <h2>React 16.9</h2>
+          <ul>
+            <li><a href="#" onClick={() => selecionarPagina(PAGINAS.DEPRECATIONS)}>16.9</a></li>
           </ul>
         </>
       )
