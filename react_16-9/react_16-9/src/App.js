@@ -11,7 +11,8 @@ export const PAGINAS = {
   PROFILER: 'profiler',
   MEMO: 'memo',
   LAZY: 'lazy',
-  CONTEXT_TYPE: 'context_type'
+  CONTEXT_TYPE: 'context_type',
+  NADA: 'nada'
 }
 
 const renderizarPagina = (paginaSelecionada, selecionarPagina) => {
@@ -38,6 +39,13 @@ const renderizarPagina = (paginaSelecionada, selecionarPagina) => {
         </Suspense>
       )
     }
+    case PAGINAS.NADA: {
+      return (
+        <div style={{ fontSize: '72px', fontWeight: 800 }}>
+          Nada de interessante
+        </div>
+      )
+    }
     default: {
       return (
         <>
@@ -51,6 +59,10 @@ const renderizarPagina = (paginaSelecionada, selecionarPagina) => {
             <li><a href="#" onClick={() => selecionarPagina(PAGINAS.MEMO)}>Memo</a></li>
             <li><a href="#" onClick={() => selecionarPagina(PAGINAS.LAZY)}>Lazy e Suspense</a></li>
             <li><a href="#" onClick={() => selecionarPagina(PAGINAS.CONTEXT_TYPE)}>contextType</a></li>
+          </ul>
+          <h2>React 16.7</h2>
+          <ul>
+            <li><a href="#" onClick={() => selecionarPagina(PAGINAS.NADA)}>16.7</a></li>
           </ul>
         </>
       )
