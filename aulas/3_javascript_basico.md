@@ -15,3 +15,25 @@ Javascript (Ou JS) é uma linguagem interpretada de alto nível, melhor conhecid
 - 1995 - Contratam Brendan Eich, com a ideia de inserir a linguagem `Scheme` dentro do Netscape, mas antes disso eles trabalharam com a `Sun Microsystems` para inserir a linguagem estática da Sun, o `Java`, com a ideia de competir com a Microsoft na adoção de plataformas e tecnologias da web.
 - - Decidem que a linguagem de script que eles iriam adotar deveria complementar o Java e deveria ter uma sintaxe parecida.
 - - Javascript é criado em 10 dias, em maio de 1995 :clown_face:
+
+## Sintaxe
+
+### Variáveis
+
+Temos 3 maneiras para criar variáveis
+
+- `let`
+- `const`
+- `var`
+
+A diferença `básica` entre eles é que `let` e `const` não deixam a variável ser declarada de novo, e a diferença entre `let` e `const` é que `const` é uma constante, o valor não pode ser mudado.
+
+Javascript é uma linguagem com `tipagem dinâmica`, ou seja, as variáveis não tem tipo fixo, a mesma variável que antes era um texto pode ser um número depois.
+
+#### Tipos de variáveis
+
+- Números `let idade = 30`
+- Strings `let nome = 'Charlie Brown'`
+- Booleano `let andarDeSkate = true`
+- Arrays `let integrantes = ['Chorão', 'Champignon', 'Outros']`
+- Objetos `let cachorro = { nome: 'Rex', raca: 'Vira-lata', idade: 6 }`
